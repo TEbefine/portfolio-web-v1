@@ -1,10 +1,19 @@
 import React from "react";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "../components/homepage";
+import PageOne from "../components/PageOne";
+import PageTwo from "../components/PageTwo";
+
+const router = createBrowserRouter([
+  { path: "/", element: <HomePage /> },
+  { path: "pageOne", element: <PageOne /> },
+  { path: "pageTwo", element: <PageTwo /> },
+]);
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello would</h1>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
