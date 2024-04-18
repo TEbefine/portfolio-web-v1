@@ -1,0 +1,72 @@
+/* Homepage style */
+header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, #e0c3a9, #c59c7c, #a67e5b, #8e7251);
+    background-size: 200% 100%;
+    animation: gradient-animation 20s ease infinite;
+    color: #261308;
+    font-family: "Playfair Display SC", serif;
+    display: grid;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .nav-link {
+    justify-self: end;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #261308;
+    margin: 6rem 8.5rem ;
+    display: flex;
+    align-items: center;
+  }
+
+  header section h2 {
+    font-size: 6rem;
+    letter-spacing: 0.001rem; 
+  }
+
+  header button {
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    width: 50px; /* Adjust the size of the button */
+    height: 50px; /* Adjust the size of the button */
+    border-radius: 50%; /* Make the button circular */
+    border: none; /* Remove border */
+    background-color: #261308; /* Set background color */
+    color: #ffffff; /* Set text color */
+    font-size: 1.5rem; /* Adjust font size */
+    cursor: pointer; /* Add pointer cursor */
+    margin-left: 10px;
+  }
+
+  header section {
+    margin: 5rem 0 100rem 0;
+    padding-left: 24rem;
+  }
+
+  .greeting {
+    display: flex-box;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ChangeLanguage {
+    display: flex;
+    align-items: center;
+  }
+
