@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { script } from "../features/language/scrip";
+import ChangeButton from "../features/language/changeButton";
 
 function HomePage() {
+  const [language, setLanguage] = useState("UK");
+
+  const handleLanguageChange = (newLanguage) => {
+    setLanguage(newLanguage);
+  };
+
   return (
     <header>
       <Link to="/pageTwo" className="nav-link">
-        Web Tech{" "}
+        {script[language].header.nav}{" "}
         <img
           src="./img/ArrowOutward.png"
           alt="Arrow Icon"
@@ -14,14 +22,12 @@ function HomePage() {
         />
       </Link>
       <section>
-        <h2>Nice to meet YOU</h2>
+        <h2>{script[language].header.sectionOne}</h2>
         <div className="greeting">
-          <p>Welcome to TEERA's Portfolio Website.</p>
+          <p>{script[language].header.sectionTwo}</p>
           <div className="ChangeLanguage">
-            <p>Which language would you prefer to use:</p>
-            <button>EN</button>
-            <button>TH</button>
-            <button>JP</button>
+            <p>{script[language].header.sectionThree}</p>
+            <ChangeButton onLanguageChange={handleLanguageChange} />
           </div>
         </div>
       </section>
