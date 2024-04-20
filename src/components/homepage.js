@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { script } from "../features/language/scrip";
 import ChangeButton from "../features/language/changeButton";
@@ -9,6 +9,20 @@ function HomePage() {
   const handleLanguageChange = (newLanguage) => {
     setLanguage(newLanguage);
   };
+
+  useEffect(() => {
+    const curtain = document.querySelector(".curtain");
+
+    const handleAnimationEnd = () => {
+      curtain.style.display = "none";
+    };
+
+    curtain.addEventListener("animationend", handleAnimationEnd);
+
+    return () => {
+      curtain.removeEventListener("animationend", handleAnimationEnd);
+    };
+  }, []);
 
   return (
     <header>
@@ -22,11 +36,16 @@ function HomePage() {
         />
       </Link>
       <section>
-        <h2>{script[language].header.sectionOne}</h2>
+        <h2 id={language}>{script[language].header.sectionOne}</h2>
+        <div className="curtain"></div>
         <div className="greeting">
-          <p>{script[language].header.sectionTwo}</p>
+          <p id={language}>
+            {script[language].header.sectionTwoPointOne}
+            <span className="name">{script[language].header.name}</span>
+            {script[language].header.sectionTwoPointTwo}
+          </p>
           <div className="ChangeLanguage">
-            <p>{script[language].header.sectionThree}</p>
+            <p id={language}>{script[language].header.sectionThree}</p>
             <ChangeButton onLanguageChange={handleLanguageChange} />
           </div>
         </div>

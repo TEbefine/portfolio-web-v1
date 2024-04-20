@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Homepage style */
 header {
     margin: 0;
@@ -7,8 +11,8 @@ header {
     background-size: 200% 100%;
     animation: gradient-animation 20s ease infinite;
     color: #261308;
-    font-family: "Playfair Display SC", serif;
     display: grid;
+    position: relative;
   }
   
   @keyframes gradient-animation {
@@ -28,45 +32,100 @@ header {
     text-decoration: none;
     font-size: 2rem;
     color: #261308;
-    margin: 6rem 8.5rem ;
+    margin: 4.5rem 8rem 0 0 ;
     display: flex;
     align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
+
+  @keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 
   header section h2 {
-    font-size: 6rem;
-    letter-spacing: 0.001rem; 
+    padding-left: 12rem;
+    z-index: auto;
+    animation: slideUp 2s ease-out forwards;
+    position: relative;
+}
+
+@keyframes fade-out {
+  from {
+      opacity: 1;;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+  .curtain {
+    width: 100%; height: 100%;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    top: 37.7rem; left: auto;
+    animation: fade-out 2s ease forwards;
+    animation-delay: 2.5s;
   }
 
-  header button {
-    font-size: 1.5rem;
-    font-family: "Playfair Display", serif;
-    width: 50px; /* Adjust the size of the button */
-    height: 50px; /* Adjust the size of the button */
-    border-radius: 50%; /* Make the button circular */
-    border: none; /* Remove border */
-    background-color: #261308; /* Set background color */
-    color: #ffffff; /* Set text color */
-    font-size: 1.5rem; /* Adjust font size */
-    cursor: pointer; /* Add pointer cursor */
-    margin-left: 10px;
+  /* style font eatch language */
+  h2#UK {
+    font-size: 25rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Six Caps", sans-serif;
+  }
+
+  p#UK {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   header section {
-    margin: 5rem 0 100rem 0;
-    padding-left: 24rem;
+    margin: 2.5rem 0 100rem 0;
   }
 
   .greeting {
-    display: flex-box;
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-family: "Playfair Display", serif;
-    align-items: center;
-    justify-content: space-between;
+    padding-left: 12rem;
+  }
+
+  .welcome {
+    font-size: 4.9rem;
+  }
+
+  .name {
+    font-size: 13rem;
   }
 
   .ChangeLanguage {
+    font-size: 2.1rem;
+  }
+
+  .languageButton {
     display: flex;
-    align-items: center;
+    padding-left: 35rem;
+    padding-top: 2rem;
+  }
+
+  header button {
+    width: 35px; /* Adjust the size of the button */
+    height: 35px; /* Adjust the size of the button */
+    border-radius: 50%; /* Make the button circular *//* Remove border */
+    background-color: #261308; /* Set background color */
+    color: #ffffff; /* Set text color */ /* Adjust font size */
+    cursor: pointer; /* Add pointer cursor */
+    margin-left: 1.5rem;
+    display: inline;
+    justify-content: center;
   }
 

@@ -2,9 +2,12 @@ export const script = {
   UK: {
     header: {
       nav: "Web Tech",
+      name: "TEERA",
       sectionOne: "Nice to meet YOU",
-      sectionTwo: "Welcome to TEERA's Portfolio Website.",
-      sectionThree: "Which language would you prefer to use:",
+      sectionTwoPointOne: "Welcome to ",
+      sectionTwoPointTwo: " 's Portfolio Website.",
+      sectionThree:
+        " Here, you'll find a showcase of my skills and past work. Before we begin, please select your preferred language",
     },
   },
   TH: {
