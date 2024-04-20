@@ -19,8 +19,27 @@ function HomePage() {
 
     curtain.addEventListener("animationend", handleAnimationEnd);
 
+    const revealElements = document.querySelectorAll(".reveal");
+
+    function reveal() {
+      revealElements.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 50;
+
+        if (revealTop < windowHeight - revealPoint) {
+          element.classList.add("active");
+        } else {
+          element.classList.remove("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", reveal);
+
     return () => {
       curtain.removeEventListener("animationend", handleAnimationEnd);
+      window.removeEventListener("scroll", reveal);
     };
   }, []);
 
@@ -44,7 +63,7 @@ function HomePage() {
             <span className="name">{script[language].header.name}</span>
             {script[language].header.sectionTwoPointTwo}
           </p>
-          <div className="ChangeLanguage">
+          <div className="ChangeLanguage reveal">
             <p id={language}>{script[language].header.sectionThree}</p>
             <ChangeButton onLanguageChange={handleLanguageChange} />
           </div>
