@@ -4,7 +4,7 @@ import { script } from "../features/language/scrip";
 import ChangeButton from "../features/language/changeButton";
 
 function HomePage() {
-  const [language, setLanguage] = useState("TH");
+  const [language, setLanguage] = useState("UK");
   const [shouldAnimate, setShouldAnimate] = useState(true);
   const reRef = useRef(null);
 
@@ -62,10 +62,12 @@ function HomePage() {
         </div>
         <div className={shouldAnimate ? "curtain" : ""}></div>
         <div className="curtain"></div>
-        <div className="greeting">
+        <div className="greeting" id={language}>
           <p id={language}>
             {script[language].header.sectionTwoPointOne}
-            <span className="name" id={language}>{script[language].header.name}</span>
+            <span className="name" id={language}>
+              {script[language].header.name}
+            </span>
             {script[language].header.sectionTwoPointTwo}
           </p>
           <div className="ChangeLanguage reveal">
