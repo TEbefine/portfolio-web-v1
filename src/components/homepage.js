@@ -1,24 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { script } from "../features/language/scrip";
 import ChangeButton from "../features/language/changeButton";
 
 function HomePage() {
-  const [language, setLanguage] = useState("UK");
+  const [language, setLanguage] = useState("TH");
+  const [shouldAnimate, setShouldAnimate] = useState(true);
+  const reRef = useRef(null);
 
   const handleLanguageChange = (newLanguage) => {
     setLanguage(newLanguage);
+    reRef.current.scrollIntoView({ behavior: "smooth" });
+    restartAnimation();
+  };
+
+  const restartAnimation = () => {
+    setShouldAnimate(false); // Turn off animation
+    setTimeout(() => {
+      setShouldAnimate(true); // Turn on animation after a short delay
+    }, 10);
   };
 
   useEffect(() => {
-    const curtain = document.querySelector(".curtain");
-
-    const handleAnimationEnd = () => {
-      curtain.style.display = "none";
-    };
-
-    curtain.addEventListener("animationend", handleAnimationEnd);
-
     const revealElements = document.querySelectorAll(".reveal");
 
     function reveal() {
@@ -38,13 +41,12 @@ function HomePage() {
     window.addEventListener("scroll", reveal);
 
     return () => {
-      curtain.removeEventListener("animationend", handleAnimationEnd);
       window.removeEventListener("scroll", reveal);
     };
   }, []);
 
   return (
-    <header>
+    <header ref={reRef}>
       <Link to="/pageTwo" className="nav-link">
         {script[language].header.nav}{" "}
         <img
@@ -55,12 +57,15 @@ function HomePage() {
         />
       </Link>
       <section>
-        <h2 id={language}>{script[language].header.sectionOne}</h2>
+        <div className={shouldAnimate ? "animated" : ""}>
+          <h2 id={language}>{script[language].header.sectionOne}</h2>
+        </div>
+        <div className={shouldAnimate ? "curtain" : ""}></div>
         <div className="curtain"></div>
         <div className="greeting">
           <p id={language}>
             {script[language].header.sectionTwoPointOne}
-            <span className="name">{script[language].header.name}</span>
+            <span className="name" id={language}>{script[language].header.name}</span>
             {script[language].header.sectionTwoPointTwo}
           </p>
           <div className="ChangeLanguage reveal">

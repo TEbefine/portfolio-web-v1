@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "shippori";
+  src: url(../public/font/ShipporiGothicB2-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "source";
+  src: url(../public/font/SourceHanSansJPSC.ttf) format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +17,7 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(90deg, #e0c3a9, #c59c7c, #a67e5b, #8e7251);
+    background: #c59c7c;
     background-size: 200% 100%;
     animation: gradient-animation 20s ease infinite;
     color: #261308;
@@ -15,7 +25,7 @@ header {
     position: relative;
   }
   
-  @keyframes gradient-animation {
+@keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
     }
@@ -27,7 +37,7 @@ header {
     }
   }
 
-  .nav-link {
+.nav-link {
     justify-self: end;
     text-decoration: none;
     font-size: 2rem;
@@ -35,12 +45,12 @@ header {
     margin: 4.5rem 8rem 0 0 ;
     display: flex;
     align-items: center;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", "source", "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
-  @keyframes slideUp {
+@keyframes slideUp {
     from {
         transform: translateY(100%);
     }
@@ -49,25 +59,30 @@ header {
     }
 }
 
-  header section h2 {
+header section h2 {
     padding-left: 12rem;
     z-index: auto;
     animation: slideUp 2s ease-out forwards;
-    position: relative;
+}
+
+.animated {
+  animation: slideUp 2s ease-out forwards;
 }
 
 @keyframes fade-out {
   from {
-      opacity: 1;;
+      opacity: 1;
+      height: 100%;
   }
   to {
       opacity: 0;
+      height: 1%;
   }
 }
 
   .curtain {
     width: 100%; height: 100%;
-    background-color: white;
+    background-color: #c59c7c;
     z-index: 5;
     position: absolute;
     top: 37.7rem; left: auto;
@@ -87,6 +102,40 @@ header {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  h2#JP {
+    font-size: 18rem;
+    padding-left: 8.5rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    font-family: "shippori", sans-serif;
+  }
+
+  p#JP {
+    font-size: 2.9rem;
+    font-family: "source", sans-serif;
+  }
+
+  span#JP {
+    font-size: 13rem;
+  }
+
+  .ChangeLanguage #JP {
+font-size: 1.69rem;
+  }
+
+  h2#TH {
+    font-size: 13rem;
+    padding-left: 8.5rem;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    font-family: "Kanit", sans-serif;
+  }
+
+  p#TH {
+    font-size: 2.9rem;
+    font-family: "Kanit", sans-serif;
   }
 
   header section {
@@ -115,7 +164,7 @@ header {
     position: relative;
     transform: translateY(50px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
   }
 
   .reveal.active {

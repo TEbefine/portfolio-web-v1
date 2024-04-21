@@ -13,17 +13,23 @@ export const script = {
   TH: {
     header: {
       nav: "เทคโนโลยีที่ใช้สร้างเว็บนี้",
+      name: "ธีระ",
       sectionOne: "ยินดีที่ได้รู้จักครับ",
-      sectionTwo: "ยินดีต้อนรับสู่เว็บแสดงผลงานของ ธีระ",
-      sectionThree: "คุณต้องการใช้ภาษาอะไรในเว็บไซต์นี้:",
+      sectionTwoPointOne: "ยินดีต้อนรับสู่เว็บไซต์พอร์ตโฟลิโอ้ของ",
+      sectionTwoPointTwo: "",
+      sectionThree:
+        " ここでは、私のスキルとこれまでの実績を紹介しています。 始める前に、お好みの言語を選択してください。",
     },
   },
   JP: {
     header: {
-      nav: "ウェブテクノロジー",
-      sectionOne: "はじめまして",
-      sectionTwo: "テラのポートフォリオ ウェブサイトへようこそ",
-      sectionThree: "どちらの言語がお好きですか : ",
+      nav: "開発技術",
+      name: "テラ",
+      sectionOne: "初めまして",
+      sectionTwoPointOne: "",
+      sectionTwoPointTwo: "のポートフォリオウェブサイトへようこそ。",
+      sectionThree:
+        " ここでは、私のスキルとこれまでの実績を紹介しています。 始める前に、お好みの言語を選択してください。",
     },
   },
 };
