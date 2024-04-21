@@ -18,10 +18,10 @@ header {
     padding: 0;
     height: 70rem;
     overflow: hidden;
-    background: #c59c7c;
+    background: #261308;
     background-size: 200% 100%;
     animation: gradient-animation 20s ease infinite;
-    color: #261308;
+    color: #c59c7c;
     display: grid;
     position: relative;
   }
@@ -42,7 +42,7 @@ header {
     justify-self: end;
     text-decoration: none;
     font-size: 2rem;
-    color: #261308;
+    color: #c59c7c;
     margin: 4.5rem 8rem 0 0 ;
     display: flex;
     align-items: center;
@@ -77,17 +77,17 @@ header section h2 {
   }
   to {
       opacity: 0;
-      height: 1%;
+      height: 25%;
   }
 }
 
   .curtain {
     width: 100%; height: 100%;
-    background-color: #c59c7c;
+    background-color: #261308;
     z-index: 5;
     position: absolute;
     top: 39.5rem; left: auto;
-    animation: fade-out 2s ease forwards;
+    animation: fade-out 1.5s ease forwards;
     animation-delay: 2.5s;
   }
 
@@ -217,11 +217,12 @@ header section h2 {
     }
   }
 
-  .nav-link img {
+  .nav-link span {
     transition: transform 0.3s ease;
+    font-size: 2.5rem;
   }
   
-  .nav-link:hover img {
+  .nav-link:hover span {
     transform: translateX(5px) translateY(-5px); /* Adjust the translation values as needed */
   }
 

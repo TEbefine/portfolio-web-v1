@@ -49,12 +49,7 @@ function HomePage() {
     <header ref={reRef}>
       <Link to="/pageTwo" className="nav-link">
         {script[language].header.nav}{" "}
-        <img
-          src="./img/ArrowOutward.png"
-          alt="Arrow Icon"
-          width="40"
-          height="40"
-        />
+        <span class="material-symbols-outlined">arrow_outward</span>
       </Link>
       <section>
         <div className={shouldAnimate ? "animated" : ""}>
