@@ -11,11 +11,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Bebas Neue", "source", "Kanit", sans-serif;
 }
 /* Homepage style */
 header {
     margin: 0;
-    padding: 0;
+    padding: 0 0 10rem 0;
     height: 70rem;
     overflow: hidden;
     background: #261308;
@@ -23,7 +24,9 @@ header {
     animation: gradient-animation 20s ease infinite;
     color: #c59c7c;
     display: grid;
-    position: relative;
+    position: sticky;
+    top: -12.5rem;
+    z-index: auto;
   }
   
 @keyframes gradient-animation {
@@ -99,12 +102,6 @@ header section h2 {
     font-family: "Six Caps", sans-serif;
   }
 
-  p#UK {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
   h2#JP {
     font-size: 18rem;
     padding-left: 8.5rem;
@@ -175,7 +172,7 @@ header section h2 {
     position: relative;
     transform: translateY(50px);
     opacity: 0;
-    transition: all 1.5s ease;
+    transition: all 1s ease;
   }
 
   .reveal.active {
@@ -226,3 +223,39 @@ header section h2 {
     transform: translateX(5px) translateY(-5px); /* Adjust the translation values as needed */
   }
 
+  /* main css */
+
+  main {
+    width: 100%;
+    display: grid;
+    margin-top: 35rem;
+    background-color: rgb(224, 224, 214);
+    z-index: 2;
+    position: relative;
+  }
+
+  .into {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: #c59c7c;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  /* style intro duction */
+/*@media (prefers-reduced-motion: no-preference) {
+  .into p {
+    scale: .8; opacity: 0;
+    font-size: 10rem;
+    background-color: #c59c7c;
+    animation: fede-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+
+  @keyframes fede-in {
+    to {scale: 1; opacity: 1;}
+  }
+}*/

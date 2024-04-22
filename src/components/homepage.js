@@ -46,32 +46,43 @@ function HomePage() {
   }, []);
 
   return (
-    <header ref={reRef}>
-      <Link to="/pageTwo" className="nav-link">
-        {script[language].header.nav}{" "}
-        <span class="material-symbols-outlined">arrow_outward</span>
-      </Link>
-      <section>
-        <div className={shouldAnimate ? "animated" : ""}>
-          <h2 id={language}>{script[language].header.sectionOne}</h2>
-        </div>
-        <div className={shouldAnimate ? "curtain" : ""}></div>
-        <div className="curtain"></div>
-        <div className="greeting" id={language}>
-          <p id={language}>
-            {script[language].header.sectionTwoPointOne}
-            <span className="name" id={language}>
-              {script[language].header.name}
-            </span>
-            {script[language].header.sectionTwoPointTwo}
-          </p>
-          <div className="ChangeLanguage reveal">
-            <p id={language}>{script[language].header.sectionThree}</p>
-            <ChangeButton onLanguageChange={handleLanguageChange} />
+    <div ref={reRef}>
+      <header>
+        <Link to="/pageTwo" className="nav-link">
+          {script[language].header.nav}{" "}
+          <span class="material-symbols-outlined">arrow_outward</span>
+        </Link>
+        <section>
+          <div className={shouldAnimate ? "animated" : ""}>
+            <h2 id={language}>{script[language].header.sectionOne}</h2>
           </div>
-        </div>
-      </section>
-    </header>
+          <div className={shouldAnimate ? "curtain" : ""}></div>
+          <div className="curtain"></div>
+          <div className="greeting" id={language}>
+            <p id={language}>
+              {script[language].header.sectionTwoPointOne}
+              <span className="name" id={language}>
+                {script[language].header.name}
+              </span>
+              {script[language].header.sectionTwoPointTwo}
+            </p>
+            <div className="ChangeLanguage reveal">
+              <p id={language}>{script[language].header.sectionThree}</p>
+              <ChangeButton onLanguageChange={handleLanguageChange} />
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+          <p className="into">
+            Confident my skills can add value to your team. Let's discuss how we
+            can work together.
+          </p>
+          <div>
+          <section></section>
+          </div>
+      </main>
+    </div>
   );
 }
 
