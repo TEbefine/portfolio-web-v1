@@ -20,12 +20,12 @@
 .navManual {
     position: absolute;
     margin-top: 16.5rem;
-    margin-left: 10rem;
+    margin-left: 8.5rem;
     display: flex;
 }
 
 .manualBtn {
-    border: 2px solid #c59c7c;
+    border: 5px solid #F2F1EB;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -37,7 +37,7 @@
 }
 
 .manualBtn:hover {
-    background-color: #261308;    
+    background-color: #F2F1EB;    
 }
 
 #radio1:checked ~.first {
@@ -56,12 +56,12 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-left: 10rem;
+    margin-left: 8.5rem;
     margin-top: 16.5rem;
 }
 
 .navAuto div{
-    border: 2px solid #c59c7c;
+    border: 5px solid #F2F1EB;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -72,14 +72,14 @@
 }
 
 #radio1:checked ~ .navAuto .autoBtn1 {
-    background-color: #c59c7c;
+    background-color: #F2F1EB;
 }
 
 #radio2:checked ~ .navAuto .autoBtn2 {
-    background-color: #c59c7c;
+    background-color: #F2F1EB;
 }
 
 #radio3:checked ~ .navAuto .autoBtn3 {
-    background-color: #c59c7c;
+    background-color: #F2F1EB;
 }
 

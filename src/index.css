@@ -19,10 +19,10 @@ header {
     padding: 0 0 10rem 0;
     height: 70rem;
     overflow: hidden;
-    background: #261308;
+    background: #D9D8D2;
     background-size: 200% 100%;
     animation: gradient-animation 20s ease infinite;
-    color: #c59c7c;
+    color: #403B39;
     display: grid;
     position: sticky;
     top: -12.5rem;
@@ -45,7 +45,7 @@ header {
     justify-self: end;
     text-decoration: none;
     font-size: 2rem;
-    color: #c59c7c;
+    color: #403B39;
     margin: 4.5rem 8rem 0 0 ;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ header section h2 {
 
   .curtain {
     width: 100%; height: 100%;
-    background-color: #261308;
+    background-color: #D9D8D2;
     z-index: 5;
     position: absolute;
     top: 39.5rem; left: auto;
@@ -189,16 +189,17 @@ header section h2 {
     width: 35px; /* Adjust the size of the button */
     height: 35px; /* Adjust the size of the button */
     border-radius: 50%; /* Make the button circular *//* Remove border */
-    background-color: #261308; /* Set background color */
-    color: #ffffff; /* Set text color */ /* Adjust font size */
-    cursor: pointer; /* Add pointer cursor */
+    background-color: #403B39; /* Set background color */
+    cursor: pointer;
     margin-left: 1.5rem;
-    display: inline;
+    display: inline-block; /* Change from inline to inline-block */
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   header button:hover {
     animation: jump 1s ease-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   }
   
   @keyframes jump {
@@ -230,17 +231,17 @@ header section h2 {
     margin-top: 35rem;
     z-index: 2;
     position: relative;
-    font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-style: normal; 
-    background-color: #D3D3D3;
+    background-color: #D9D8D2;
   }
 
   .into {
     display: flex;
     width: 100%;
     height: 20vh;
-    background-color: #c59c7c;
+    background-color: #0A090D;
+    color: #F2F1EB;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -263,18 +264,48 @@ header section h2 {
 }*/
 .contain {
   display: flex;
-  height: 150vh;
-  justify-content: space-around;
+  height: 90vh;
+  justify-content: center;
 }
 
 .contain section {
-  height: 30vh;
-  width: 25rem;
+  width: 24rem;
+  background-color: #f2F1EC;
+  padding: 1rem;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sectionSp {
   position: absolute;
-  top: 25rem; left: 70rem;
+  left: 44.5rem;
+  top: 13rem;
+  font-size: 1.2rem;
+}
+
+#curve {
+  fill: transparent;
+}
+
+.text {
+  transform-origin: 50% 50%;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.cat {
+  width: 8rem;
+  height: auto;
+  position: absolute;
+  z-index: auto;
+  top: 17.5rem;
 }
 
 .secOne img {
@@ -284,13 +315,15 @@ header section h2 {
 
 .secOne {
   margin-top: -3rem;
-  font-size: 1.5rem;
+  height: 50rem;
 }
 
 .secOne p {
   font-family: "Roboto Condensed";
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 450;
+  line-height: 1.35;
+  padding-top: 2rem;
+  font-size: 1.62rem;
 }
 
 .secTwo img {
@@ -300,13 +333,17 @@ header section h2 {
 
 .secTwo {
   font-size: 1.5rem;
-  margin-top: 30rem;
+  margin: 17rem 3rem 0 3rem ;
+  height: 36.5rem;
+  z-index: 1;
 }
 
 .secTwo p {
   font-family: "Roboto Condensed";
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 450;
+  line-height: 1.35;
+  padding-bottom: 2rem;
+  font-size: 1.62rem;
 }
 
 .secThree img {
@@ -316,11 +353,14 @@ header section h2 {
 
 .secThree {
   font-size: 1.5rem;
-  margin-top: 25rem;
+  height: 38rem;
+  margin-top: 3rem;
 }
 
 .secThree p {
   font-family: "Roboto Condensed";
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-weight: 450;
+  line-height: 1.35;
+  padding-bottom: 2rem;
+  font-size: 1.62rem;
 }

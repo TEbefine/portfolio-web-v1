@@ -80,36 +80,39 @@ function HomePage() {
           can work together.
         </p>
         <div className="contain">
-          <p className="sectionSp">
-            jkopakopnkopqnkfoqpwfjqwokpvnkbjrvoq[koq[fji
-          </p>
+          <img className="cat" src="/img/ooohCat.png" alt="cute cat" />
+          <div>
+            <svg className="sectionSp" width="250" height="250">
+              <path id="curve" d="M 25 125 A 100 100 0 1 1 25 127"></path>
+              <text className="text">
+                <textPath href="#curve">
+                  I also have Photoshop skills. OOOOOH . . .
+                </textPath>
+              </text>
+            </svg>
+          </div>
           <section className="secOne" id={language}>
             <img src="/img/tea-cozy.png" alt="project tea cozy" />
             <p>
-              Far out in the uncharted backwaters of the unfashionable end of
-              the western spiral arm of the Galaxy lies a small unregarded
-              yellow sun. Orbiting this at a distance of roughly ninety-two
-              million miles is an utterly insignificant little blue green planet
-              whose ape-descended life forms are so amazingly primitive that
-              they still think digital watches are a pretty neat idea.
+              Proficient in HTML fundamentals, adept at interpreting and
+              executing directives, and skilled in collaborative teamwork,
+              ensuring seamless integration within project frameworks.
             </p>
           </section>
           <section className="secTwo">
             <p>
-              Far out in the uncharted backwaters of the unfashionable end of
-              the western spiral arm of the Galaxy lies a small unregarded
-              yellow sun. Orbiting this at a distance of roughly ninety-two
-              million miles is an utterly insignificant little blue green planet
-              whose ape-descended life forms are so amazingly primitive that
-              they still think digital watches are a pretty neat idea.
+              Applied my problem-solving abilities to create projects such as
+              verifying credit card number accuracy, designing DNA structures
+              tailored to scientists' requirements, and developing a simple
+              hat-hunting game.
             </p>
             <ProjectJS />
           </section>
           <section className="secThree">
             <p>
-              Far out in the uncharted backwaters of the unfashionable end of
-              the western spiral arm of the Galaxy lies a small unregarded
-              yellow sun.
+              Have a basic understanding of website structure and proficient in
+              CSS layout techniques. Always seeking creativity, knowledge, and
+              new development techniques.
             </p>
             <img src="/img/portfolio.png" alt="HTML portfolio" />
           </section>
