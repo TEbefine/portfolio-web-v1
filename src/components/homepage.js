@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { script } from "../features/language/scrip";
 import ChangeButton from "../features/language/changeButton";
+import ProjectJS from "../features/changePic/ProjectJS";
 
 function HomePage() {
   const [language, setLanguage] = useState("UK");
@@ -74,13 +75,45 @@ function HomePage() {
         </section>
       </header>
       <main>
-          <p className="into">
-            Confident my skills can add value to your team. Let's discuss how we
-            can work together.
+        <p className="into">
+          Confident my skills can add value to your team. Let's discuss how we
+          can work together.
+        </p>
+        <div className="contain">
+          <p className="sectionSp">
+            jkopakopnkopqnkfoqpwfjqwokpvnkbjrvoq[koq[fji
           </p>
-          <div>
-          <section></section>
-          </div>
+          <section className="secOne" id={language}>
+            <img src="/img/tea-cozy.png" alt="project tea cozy" />
+            <p>
+              Far out in the uncharted backwaters of the unfashionable end of
+              the western spiral arm of the Galaxy lies a small unregarded
+              yellow sun. Orbiting this at a distance of roughly ninety-two
+              million miles is an utterly insignificant little blue green planet
+              whose ape-descended life forms are so amazingly primitive that
+              they still think digital watches are a pretty neat idea.
+            </p>
+          </section>
+          <section className="secTwo">
+            <p>
+              Far out in the uncharted backwaters of the unfashionable end of
+              the western spiral arm of the Galaxy lies a small unregarded
+              yellow sun. Orbiting this at a distance of roughly ninety-two
+              million miles is an utterly insignificant little blue green planet
+              whose ape-descended life forms are so amazingly primitive that
+              they still think digital watches are a pretty neat idea.
+            </p>
+            <ProjectJS />
+          </section>
+          <section className="secThree">
+            <p>
+              Far out in the uncharted backwaters of the unfashionable end of
+              the western spiral arm of the Galaxy lies a small unregarded
+              yellow sun.
+            </p>
+            <img src="/img/portfolio.png" alt="HTML portfolio" />
+          </section>
+        </div>
       </main>
     </div>
   );
