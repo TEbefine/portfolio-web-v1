@@ -277,11 +277,11 @@ header section h2 {
 
 .sectionSp {
   position: absolute;
-  left: 44.5rem;
-  top: 13rem;
   font-size: 1.2rem;
   word-spacing: 4px; 
   letter-spacing: 1.6px;
+  margin-right: 2.7rem;
+  margin-top: 1.35rem;
 }
 
 #curve {
@@ -369,7 +369,8 @@ header section h2 {
 
 .nav-link-two {
   position: absolute;
-  left: 80.2rem; top: 60rem;
+  margin-left: 58rem;
+  margin-top: 47.5rem;
   text-decoration: none;
   font-size: 1.8rem;
   color: #403B39;

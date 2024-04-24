@@ -81,7 +81,6 @@ function HomePage() {
         </p>
         <div className="contain">
           <img className="cat" src="/img/ooohCat.png" alt="cute cat" />
-          <div>
             <svg className="sectionSp" width="250" height="250">
               <path id="curve" d="M 25 125 A 100 100 0 1 1 25 127"></path>
               <text className="text">
@@ -90,7 +89,6 @@ function HomePage() {
                 </textPath>
               </text>
             </svg>
-          </div>
           <section className="secOne" id={language}>
             <img src="/img/tea-cozy.png" alt="project tea cozy" />
             <p>
