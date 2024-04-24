@@ -6,8 +6,8 @@ import PageTwo from "../components/PageTwo";
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
-  { path: "pageOne", element: <PageOne /> },
-  { path: "pageTwo", element: <PageTwo /> },
+  { path: "details-web", element: <PageOne /> },
+  { path: "details-skills", element: <PageTwo /> },
 ]);
 
 export default function App() {

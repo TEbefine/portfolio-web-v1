@@ -280,6 +280,8 @@ header section h2 {
   left: 44.5rem;
   top: 13rem;
   font-size: 1.2rem;
+  word-spacing: 4px; 
+  letter-spacing: 1.6px;
 }
 
 #curve {
@@ -363,4 +365,39 @@ header section h2 {
   line-height: 1.35;
   padding-bottom: 2rem;
   font-size: 1.62rem;
+}
+
+.nav-link-two {
+  position: absolute;
+  left: 80.2rem; top: 60rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #403B39;
+  transition: transform 0.3s ease;
+  letter-spacing: 0.2px;
+}
+
+.arrow {
+  transition: opacity 0.3s ease; /* Add a transition for opacity */
+}
+
+.more {
+  position: absolute;
+  right: 4rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transitions for opacity and transform */
+  transform: translateX(100%); /* Initially move the "more" span off-screen */
+}
+
+.nav-link-two:hover .arrow {
+  opacity: 0; /* Hide the arrow when hovering */
+}
+
+.nav-link-two:hover {
+  transform: translateX(35px);/* Move the "Details" span to the left when hovering */
+}
+
+.nav-link-two:hover .more {
+  opacity: 1; /* Make the "more" span visible when hovering */
+  transform: translateX(-35px); /* Slide the "more" span in from the right */
 }

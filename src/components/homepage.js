@@ -49,7 +49,7 @@ function HomePage() {
   return (
     <div ref={reRef}>
       <header>
-        <Link to="/pageTwo" className="nav-link">
+        <Link to="/details-web" className="nav-link">
           {script[language].header.nav}{" "}
           <span class="material-symbols-outlined">arrow_outward</span>
         </Link>
@@ -116,6 +116,15 @@ function HomePage() {
             </p>
             <img src="/img/portfolio.png" alt="HTML portfolio" />
           </section>
+          <Link to="/details-skills" className="nav-link-two">
+            <div>
+              Details
+              <span className="material-symbols-outlined arrow">
+                arrow_outward
+              </span>
+              <span className="more">more</span>
+            </div>
+          </Link>
         </div>
       </main>
     </div>
