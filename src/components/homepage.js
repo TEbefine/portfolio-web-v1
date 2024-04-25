@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { script } from "../features/language/scrip";
 import ChangeButton from "../features/language/changeButton";
 import ProjectJS from "../features/changePic/ProjectJS";
+import SectionJS from "../features/secJS/SectionJS";
 
 function HomePage() {
   const [language, setLanguage] = useState("UK");
@@ -81,36 +82,37 @@ function HomePage() {
         </p>
         <div className="contain">
           <img className="cat" src="/img/ooohCat.png" alt="cute cat" />
-            <svg className="sectionSp" width="250" height="250">
-              <path id="curve" d="M 25 125 A 100 100 0 1 1 25 127"></path>
-              <text className="text">
-                <textPath href="#curve">
-                  I also have Photoshop skills. OOOOOH . . .
-                </textPath>
-              </text>
-            </svg>
+          <svg className="sectionSp" width="250" height="250">
+            <path id="curve" d="M 25 125 A 100 100 0 1 1 25 127"></path>
+            <text className="text">
+              <textPath href="#curve">
+                I also have Photoshop skills. OOOOOH . . .
+              </textPath>
+            </text>
+          </svg>
           <section className="secOne" id={language}>
             <img src="/img/tea-cozy.png" alt="project tea cozy" />
             <p>
-              Proficient in HTML fundamentals, adept at interpreting and
-              executing directives, and skilled in collaborative teamwork,
-              ensuring seamless integration within project frameworks.
+              &nbsp;&nbsp;&nbsp;Proficient in HTML fundamentals, adept at
+              interpreting and executing directives, and skilled in
+              collaborative teamwork, ensuring seamless integration within
+              project frameworks.
             </p>
           </section>
           <section className="secTwo">
             <p>
-              Applied my problem-solving abilities to create projects such as
-              verifying credit card number accuracy, designing DNA structures
-              tailored to scientists' requirements, and developing a simple
-              hat-hunting game.
+              &nbsp;&nbsp;&nbsp;Applied my problem-solving abilities to create
+              projects such as verifying credit card number accuracy, designing
+              DNA structures tailored to scientists' requirements, and
+              developing a simple hat-hunting game.
             </p>
             <ProjectJS />
           </section>
           <section className="secThree">
             <p>
-              Have a basic understanding of website structure and proficient in
-              CSS layout techniques. Always seeking creativity, knowledge, and
-              new development techniques.
+              &nbsp;&nbsp;&nbsp;Have a basic understanding of website structure
+              and proficient in CSS layout techniques. Always seeking
+              creativity, knowledge, and new development techniques.
             </p>
             <img src="/img/portfolio.png" alt="HTML portfolio" />
           </section>
@@ -123,6 +125,9 @@ function HomePage() {
               <span className="more">more</span>
             </div>
           </Link>
+        </div>
+        <div className="JS">
+          <SectionJS language={language} />
         </div>
       </main>
     </div>

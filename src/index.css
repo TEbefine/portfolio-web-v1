@@ -322,10 +322,10 @@ header section h2 {
 
 .secOne p {
   font-family: "Roboto Condensed";
-  font-weight: 450;
+  font-weight: 400;
   line-height: 1.35;
-  padding-top: 2rem;
-  font-size: 1.62rem;
+  padding: 2.5rem 1.3rem 0 1.3rem;
+  font-size: 1.5rem;
 }
 
 .secTwo img {
@@ -342,10 +342,10 @@ header section h2 {
 
 .secTwo p {
   font-family: "Roboto Condensed";
-  font-weight: 450;
+  font-weight: 400;
   line-height: 1.35;
-  padding-bottom: 2rem;
-  font-size: 1.62rem;
+  padding: 1rem 1.3rem 2.5rem 1.3rem;
+  font-size: 1.5rem;
 }
 
 .secThree img {
@@ -355,22 +355,22 @@ header section h2 {
 
 .secThree {
   font-size: 1.5rem;
-  height: 38rem;
+  height: 39rem;
   margin-top: 3rem;
 }
 
 .secThree p {
   font-family: "Roboto Condensed";
-  font-weight: 450;
+  font-weight: 400;
   line-height: 1.35;
-  padding-bottom: 2rem;
-  font-size: 1.62rem;
+  padding: 1rem 1.3rem 2.5rem 1.3rem;
+  font-size: 1.5rem;
 }
 
 .nav-link-two {
   position: absolute;
   margin-left: 58rem;
-  margin-top: 47.5rem;
+  margin-top: 48rem;
   text-decoration: none;
   font-size: 1.8rem;
   color: #403B39;
@@ -401,4 +401,11 @@ header section h2 {
 .nav-link-two:hover .more {
   opacity: 1; /* Make the "more" span visible when hovering */
   transform: translateX(-35px); /* Slide the "more" span in from the right */
+}
+
+.JS {
+  display: block;
+  width: 100%;
+  background-color: #403B39;
+  padding: 1.5rem 0 ;
 }

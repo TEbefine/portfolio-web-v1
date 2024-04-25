@@ -1,0 +1,40 @@
+.secSkill {
+    display: flex;
+}
+
+.imageJm {
+    width: 70%;
+    margin-left: 1rem;
+}
+
+.secIn {
+    width: 30%;
+    margin: 4rem 4.3rem 0 5rem;
+}
+
+.secSkill p {
+    color: #D9D8D2;
+    font-family: "Roboto Condensed";
+    font-weight: 350;
+    line-height: 1.25;
+    font-size: 1.3rem;
+    align-self: center;
+    letter-spacing: 0.5px;
+    /* text-align: justify; */
+}
+
+
+.navLink {
+    display: inline-block;
+    text-decoration: none;
+    color: #D9D8D2;
+    font-size: 1rem;
+    font-family: "Roboto Condensed";
+    font-weight: 350;
+    margin: 6rem 0 0 15rem;
+}
+
+.navLink span {
+    font-size: 1rem;
+}
+
