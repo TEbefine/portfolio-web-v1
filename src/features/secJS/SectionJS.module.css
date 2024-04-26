@@ -8,16 +8,16 @@
 }
 
 .secIn {
-    width: 30%;
-    margin: 4rem 4.3rem 0 5rem;
+    display: block;
+    margin: 6rem 4.3rem 0 5rem;
 }
 
 .secSkill p {
     color: #D9D8D2;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", "Kanit";
     font-weight: 350;
     line-height: 1.25;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     align-self: center;
     letter-spacing: 0.5px;
     /* text-align: justify; */
@@ -25,15 +25,14 @@
 
 
 .navLink {
-    display: inline-block;
+    display: inline-block; 
     text-decoration: none;
     color: #D9D8D2;
-    width: 100%;
-
     font-size: 1rem;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", "Kanit";
     font-weight: 350;
-    margin: 6rem 0 0 11.8rem;
+    margin: 9.5rem 0 0 15rem;
+    padding-top: 2r;
 }
 
 .navLink span {

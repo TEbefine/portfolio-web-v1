@@ -43,37 +43,37 @@ export const script = {
       nav: "เทคโนโลยีที่ใช้สร้างเว็บนี้",
       name: "ธีระ",
       sectionOne: "ยินดีที่ได้รู้จักครับ",
-      sectionTwoPointOne: "ยินดีต้อนรับสู่เว็บไซต์พอร์ตโฟลิโอ้ของ ",
+      sectionTwoPointOne: "ยินดีต้อนรับสู่เว็บไซต์แสดงผลงานของ ",
       sectionTwoPointTwo: "",
       sectionThree:
         " ที่นี่ คุณจะได้พบกับผลงานและความสามารถของผม ก่อนที่เราจะเริ่ม กรุณาเลือกภาษาที่คุณต้องการ",
     },
     main: {
-      into: "Confident my skills can add value to your team. Let's discuss how we can work together.",
+      into: "มั่นใจว่าทักษะและประสบการณ์ของผมจะสร้างคุณค่าให้กับทีมของคุณยินดีที่จะแสดงให้เห็นว่าผมสามารถทำอะไรได้บ้าง",
       section: {
-        oohCat: "I also have Photoshop skills. OOOOOH . . .",
+        oohCat: "ผมสามารถใช้ Photoshop ได้ด้วยนะ อู้วว . . .",
         secOne:
-          "Proficient in HTML fundamentals, adept at interpreting and executing directives, and skilled in collaborative teamwork, ensuring seamless integration within project frameworks.",
+          "มีความเข้าใจพื้นฐานของ HTML โครงสร้าง และการทำงานของโค้ดคำสั่งสามารถวางโครงสร้างตามคำสั่งที่ออกแบบมาได้อย่างถูกต้องและมีความรู้พื้นฐานที่เพียงพอเพื่อมั่นใจในการทำงานร่วมกับทีมอย่างราบรื่น",
         secTwo:
-          "Applied my problem-solving abilities to create projects such as verifying credit card number accuracy, designing DNA structures tailored to scientists' requirements, and developing a simple hat-hunting game.",
+          "มั่นใจในทักษะการวิเคราะห์และแก้ปัญหา สามารถนำความรู้ด้านภาษา JavaScript มาสร้างสรรค์โปรเจคที่หลากหลาย ตัวอย่างผลงาน เช่น ระบบตรวจสอบความถูกต้องของบัตรเครดิต การออกแบบโครงสร้าง DNA ตามความต้องการของนักวิทยาศาสตร์ และพัฒนาเกมส์ตามหาหมวกสุดสนุก",
         secThree:
-          "Have a basic understanding of website structure and proficient in CSS layout techniques. Always seeking creativity, knowledge, and new development techniques.",
+          "มีความคิดสร้างสรรค์และสามารถนำทักษะ CSS มาสร้างสรรค์เว็บไซต์ที่มีเอกลักษณ์ ใฝ่หาความรู้และเทคนิคใหม่ ๆ อยู่เสมอเพื่อพัฒนาฝีมือและสร้างผลงานที่มีคุณภาพ",
         secFour: {
           secOne:
-            "I built a React web application called Jammming, leveraging my knowledge of React and utilizing requests with the Spotify API to search the Spotify library and create a custom playlist.",
+            "ผมสร้างเว็บแอปพลิเคชั่นด้วย React ชื่อว่า Jammming โดยใช้ความรู้ด้าน React และการติดต่อกับ Spotify API เพื่อค้นหาเพลงในคลังเพลงของ Spotify และสร้างเพลย์ลิสต์แบบกำหนดเอง",
           secTwo:
-            "In addition to React, I am proficient in using Router (for smooth navigation), Redux (for easy state management in web applications), and Redux Toolkit.",
+            "นอกเหนือจาก React ผมยังมีความเชี่ยวชาญในการใช้ Router (สำหรับการนำทางที่ราบรื่น) Redux (สำหรับการจัดการสถานะของเว็บแอปพลิเคชั่นอย่างง่ายดาย) และ Redux Toolkit",
           secThree:
-            "I possess a strong foundational skill set in web development and am adept at quickly learning new technologies used within your company. I am also adept at collaborating with team members; if you introduce me to the programs used in your business, I can easily understand and rapidly adapt.",
+            "ผมมีทักษะพื้นฐานด้านเว็บพัฒนาที่แข็งแกร่งและสามารถเรียนรู้เทคโนโลยีใหม่ ๆ ที่บริษัทท่านใช้อย่างรวดเร็ว ผมเป็นคนทำงานร่วมกับผู้อื่นได้ดีโดยหากท่านแนะนำโปรแกรมที่บริษัทฯใช้ผมสามารถทำความเข้าใจและปรับตัวได้อย่างรวดเร็ว",
         },
       },
       buttonWord: {
         detail: {
-          del: "Details",
+          del: "รายละเอียด",
           spDel: "",
         },
-        more: "More",
-        linkButton: "View Projects",
+        more: "เพิ่มเติม",
+        linkButton: "ทักษะที่สูงขึ้น",
       },
     },
   },
