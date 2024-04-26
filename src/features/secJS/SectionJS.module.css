@@ -28,10 +28,12 @@
     display: inline-block;
     text-decoration: none;
     color: #D9D8D2;
+    width: 100%;
+
     font-size: 1rem;
     font-family: "Roboto Condensed";
     font-weight: 350;
-    margin: 6rem 0 0 15rem;
+    margin: 6rem 0 0 11.8rem;
 }
 
 .navLink span {

@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function ChangeButton({ onLanguageChange }) {
+export default function ChangeButton({ onLanguageChange, language }) {
   return (
-    <div className="languageButton">
+    <div className="languageButton" id={language + "Button"}>
       <button value="UK" onClick={() => onLanguageChange("UK")}>
         <img src="/img/UK.png" alt="english" width="30" height="30" />
       </button>

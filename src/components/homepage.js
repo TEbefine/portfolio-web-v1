@@ -49,7 +49,7 @@ function HomePage() {
 
   return (
     <div ref={reRef}>
-      <header>
+      <header className="adjustHeader">
         <Link to="/details-web" className="nav-link">
           {script[language].header.nav}{" "}
           <span class="material-symbols-outlined">arrow_outward</span>
@@ -59,7 +59,7 @@ function HomePage() {
             <h2 id={language}>{script[language].header.sectionOne}</h2>
           </div>
           <div className={shouldAnimate ? "curtain" : ""}></div>
-          <div className="curtain"></div>
+          <div className="curtain" id={language + "Curtain"}></div>
           <div className="greeting" id={language}>
             <p id={language}>
               {script[language].header.sectionTwoPointOne}
@@ -70,59 +70,54 @@ function HomePage() {
             </p>
             <div className="ChangeLanguage reveal">
               <p id={language}>{script[language].header.sectionThree}</p>
-              <ChangeButton onLanguageChange={handleLanguageChange} />
+              <ChangeButton
+                onLanguageChange={handleLanguageChange}
+                language={language}
+              />
             </div>
           </div>
         </section>
       </header>
       <main>
-        <p className="into">
-          Confident my skills can add value to your team. Let's discuss how we
-          can work together.
+        <p className="into" id={language + "Into"}>
+          {script[language].main.into}
         </p>
-        <div className="contain">
+        <div className="contain" id={language + "Main"}>
           <img className="cat" src="/img/ooohCat.png" alt="cute cat" />
           <svg className="sectionSp" width="250" height="250">
             <path id="curve" d="M 25 125 A 100 100 0 1 1 25 127"></path>
             <text className="text">
               <textPath href="#curve">
-                I also have Photoshop skills. OOOOOH . . .
+                {script[language].main.section.oohCat}
               </textPath>
             </text>
           </svg>
-          <section className="secOne" id={language}>
+          <section className="secOne" id={language + "SecOne"}>
             <img src="/img/tea-cozy.png" alt="project tea cozy" />
-            <p>
-              &nbsp;&nbsp;&nbsp;Proficient in HTML fundamentals, adept at
-              interpreting and executing directives, and skilled in
-              collaborative teamwork, ensuring seamless integration within
-              project frameworks.
-            </p>
+            <p>&nbsp;&nbsp;&nbsp;{script[language].main.section.secOne}</p>
           </section>
-          <section className="secTwo">
-            <p>
-              &nbsp;&nbsp;&nbsp;Applied my problem-solving abilities to create
-              projects such as verifying credit card number accuracy, designing
-              DNA structures tailored to scientists' requirements, and
-              developing a simple hat-hunting game.
-            </p>
+          <section className="secTwo" id={language + "SecTwo"}>
+            <p>&nbsp;&nbsp;&nbsp;{script[language].main.section.secTwo}</p>
             <ProjectJS />
           </section>
-          <section className="secThree">
-            <p>
-              &nbsp;&nbsp;&nbsp;Have a basic understanding of website structure
-              and proficient in CSS layout techniques. Always seeking
-              creativity, knowledge, and new development techniques.
-            </p>
+          <section className="secThree" id={language + "SecThree"}>
+            <p>&nbsp;&nbsp;&nbsp;{script[language].main.section.secThree}</p>
             <img src="/img/portfolio.png" alt="HTML portfolio" />
           </section>
-          <Link to="/details-skills" className="nav-link-two">
-            <div>
-              Details
-              <span className="material-symbols-outlined arrow">
+          <Link
+            to="/details-skills"
+            className={`nav-link-two ${language}NavLink`}
+            id={language + "NavTwo"}
+          >
+            <div className={language + "LinkBtn"}>
+              {script[language].main.buttonWord.detail.del}
+              <span id={language + "Mis"}>{script[language].main.buttonWord.detail.spDel}</span>
+              <span className="material-symbols-outlined" id={language + "Mis"}>
                 arrow_outward
               </span>
-              <span className="more">more</span>
+              <span className={`${language}More`}>
+                {script[language].main.buttonWord.more}
+              </span>
             </div>
           </Link>
         </div>

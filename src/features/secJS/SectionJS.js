@@ -14,24 +14,15 @@ function SectionJS({ language }) {
       <div className={styles.secIn}>
         <div>
           <p className={styles.aritce}>
-            &nbsp;&nbsp;&nbsp;I built a React web application called Jammming,
-            leveraging my knowledge of React and utilizing requests with the
-            Spotify API to search the Spotify library and create a custom
-            playlist.
+            &nbsp;&nbsp;&nbsp;{script[language].main.section.secFour.secOne}
             <br /> <br />
-            &nbsp;&nbsp;&nbsp;In addition to React, I am proficient in using
-            Router (for smooth navigation), Redux (for easy state management in
-            web applications), and Redux Toolkit.
+            &nbsp;&nbsp;&nbsp;{script[language].main.section.secFour.secTwo}
             <br /> <br />
-            &nbsp;&nbsp;&nbsp;I possess a strong foundational skill set in web
-            development and am adept at quickly learning new technologies used
-            within your company. I am also adept at collaborating with team
-            members; if you introduce me to the programs used in your business,
-            I can easily understand and rapidly adapt.
+            &nbsp;&nbsp;&nbsp;{script[language].main.section.secFour.secThree}
           </p>
         </div>
         <Link to="/details-web" className={styles.navLink}>
-          View Projects{" "}
+          {script[language].main.buttonWord.linkButton}{" "}
           <span class="material-symbols-outlined">arrow_outward</span>
         </Link>
       </div>

@@ -25,9 +25,10 @@ header {
     color: #403B39;
     display: grid;
     position: sticky;
-    top: -12.5rem;
+    top: -11rem;
     z-index: auto;
-  }
+    justify-items: center;
+}
   
 @keyframes gradient-animation {
     0% {
@@ -63,9 +64,9 @@ header {
 }
 
 header section h2 {
-    padding-left: 12rem;
+    padding-left: 1rem;
     z-index: auto;
-    animation: slideUp 2s ease-out forwards;
+    animation: slideUp 3s ease-out forwards;
 }
 
 .animated {
@@ -97,13 +98,14 @@ header section h2 {
   h2#UK {
     font-size: 25rem;
     font-weight: 400;
+    margin-top: -3rem;
     font-style: normal;
     font-family: "Six Caps", sans-serif;
   }
 
   h2#JP {
     font-size: 18rem;
-    padding-left: 8.5rem;
+    padding-left: 2rem;
     padding-top: 6rem;
     padding-bottom: 1rem;
     font-family: "shippori", sans-serif;
@@ -112,14 +114,16 @@ header section h2 {
   p#JP {
     font-size: 3rem;
     font-family: "source", sans-serif;
+    margin-top: -1rem;
   }
 
   span#JP {
     font-size: 13rem;
+    margin-top: -1rem;
   }
 
   div#JP{
-    padding-left: 8.5rem;
+    padding-left: 4rem;
   }
 
 .ChangeLanguage #JP {
@@ -128,7 +132,8 @@ header section h2 {
 
   h2#TH {
     font-size: 13rem;
-    padding-left: 8.5rem;
+    margin-top: -4rem;
+    padding-left: 1rem;
     padding-top: 8rem;
     padding-bottom: 1rem;
     font-family: "Kanit", sans-serif;
@@ -146,13 +151,13 @@ header section h2 {
   }
 
   div#TH{
-    padding-left: 8.5rem;
+    padding-left: 2.5rem;
   }
 
   .greeting {
     font-size: 5rem;
     font-family: "Playfair Display", serif;
-    padding-left: 12rem;
+    padding-left: 1.5rem;
   }
 
   .welcome {
@@ -181,8 +186,20 @@ header section h2 {
 
   .languageButton {
     display: flex;
-    padding-left: 35rem;
-    padding-top: 2rem;
+    position: absolute;
+    top: -47.5rem; right: 1rem;
+  }
+
+  #THButton {
+    display: flex;
+    position: absolute;
+    top: -45rem; right: 1rem;
+  }
+
+  #UKButton {
+    display: flex;
+    position: absolute;
+    top: -47.5rem; right: -4rem;
   }
 
   header button {
@@ -191,8 +208,8 @@ header section h2 {
     border-radius: 50%; /* Make the button circular *//* Remove border */
     background-color: #403B39; /* Set background color */
     cursor: pointer;
-    margin-left: 1.5rem;
-    display: inline-block; /* Change from inline to inline-block */
+    margin-left: 1.2rem;
+    display: inline-block; 
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
@@ -204,13 +221,13 @@ header section h2 {
   
   @keyframes jump {
     0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0); /* Initial position */
+      transform: translateY(0) scale(1); /* Initial position */
     }
     40% {
-      transform: translateY(-10px); /* Jump up */
+      transform: translateY(-10px) scale(1.6); /* Jump up */
     }
     60% {
-      transform: translateY(-5px); /* Jump down */
+      transform: translateY(-5px) scale(1.2); /* Jump down */
     }
   }
 
@@ -244,24 +261,9 @@ header section h2 {
     color: #F2F1EB;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  /* style intro duction */
-/*@media (prefers-reduced-motion: no-preference) {
-  .into p {
-    scale: .8; opacity: 0;
-    font-size: 10rem;
-    background-color: #c59c7c;
-    animation: fede-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-  }
-
-  @keyframes fede-in {
-    to {scale: 1; opacity: 1;}
-  }
-}*/
 .contain {
   display: flex;
   height: 90vh;
@@ -369,7 +371,7 @@ header section h2 {
 
 .nav-link-two {
   position: absolute;
-  margin-left: 58rem;
+  margin-left: 59.5rem;
   margin-top: 48rem;
   text-decoration: none;
   font-size: 1.8rem;
@@ -378,11 +380,16 @@ header section h2 {
   letter-spacing: 0.2px;
 }
 
-.arrow {
+#JPNavTwo {
+  margin-top: 42.5rem;
+  font-size: 1.7rem;
+}
+
+#UKMis {
   transition: opacity 0.3s ease; /* Add a transition for opacity */
 }
 
-.more {
+.UKMore {
   position: absolute;
   right: 4rem;
   opacity: 0;
@@ -390,17 +397,44 @@ header section h2 {
   transform: translateX(100%); /* Initially move the "more" span off-screen */
 }
 
-.nav-link-two:hover .arrow {
+.nav-link-two:hover #UKMis {
   opacity: 0; /* Hide the arrow when hovering */
 }
 
-.nav-link-two:hover {
+.UKNavLink:hover {
   transform: translateX(35px);/* Move the "Details" span to the left when hovering */
 }
 
-.nav-link-two:hover .more {
+.nav-link-two:hover .UKMore {
   opacity: 1; /* Make the "more" span visible when hovering */
   transform: translateX(-35px); /* Slide the "more" span in from the right */
+}
+
+/* JP and TH NAV two */
+.JPMore {
+  position: absolute;
+  width: 100%;
+  right: -2.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transitions for opacity and transform */
+  transform: translateX(50%); /* Initially move the "more" span off-screen */
+}
+
+#JPMis {
+  transition: opacity 0.3s ease; /* Add a transition for opacity */
+}
+
+.nav-link-two:hover .JPMore {
+  opacity: 1; /* Make the "more" span visible when hovering */
+  transform: translateX(-5px); /* Slide the "more" span in from the right */
+}
+
+.JPNavLink:hover {
+  transform: translateX(-15px);/* Move the "Details" span to the left when hovering */
+}
+
+.nav-link-two:hover #JPMis {
+  opacity: 0; /* Hide the arrow when hovering */
 }
 
 .JS {
@@ -408,4 +442,30 @@ header section h2 {
   width: 100%;
   background-color: #403B39;
   padding: 1.5rem 0 ;
+}
+
+/* Edit language */
+#JPInto {
+  font-size: 1.2rem;
+}
+
+#JPMain {
+  height: 80vh;
+}
+
+#JPMain p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#JPSecOne {
+  height: 45rem;
+}
+
+#JPSecTwo {
+  height: 31rem;
+}
+
+#JPSecThree {
+  height: 36.5rem;
 }
