@@ -30,6 +30,10 @@ header {
     z-index: auto;
     justify-items: center;
 }
+
+.adjustHeader {
+  height: 120vh;
+}
   
 @keyframes gradient-animation {
     0% {

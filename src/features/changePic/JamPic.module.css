@@ -1,0 +1,104 @@
+.JmP {
+    margin-left: 1rem;
+    overflow: hidden;
+    width: 342vh;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+}
+
+.JmP img{
+    width: 1200px;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 300%;
+    transition: 2s;
+}
+
+.navManual {
+    position: absolute;
+    margin-left: 33rem;
+    margin-top: 38rem;
+    display: flex;
+}
+
+.manualBtn {
+    border: 5px solid #354733;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manualBtn:not(:last-child) {
+    margin-right: 18.5px;    
+}
+
+.manualBtn:hover {
+    background-color: #354733;    
+}
+
+#radio1:checked ~.first {
+    margin-left: 0;
+}
+
+#radio2:checked ~.first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~.first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~.first {
+    margin-left: -300%;
+}
+
+#radio5:checked ~.first {
+    margin-left: -400%;
+}
+
+.navAuto {
+    position: absolute;
+    display: flex;
+    margin-left: 33rem;
+    margin-top: 38rem;
+}
+
+.navAuto div{
+    border: 5px solid #354733;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navAuto div:not(:last-child) {
+    margin-right: 18.5px;
+}
+
+#radio1:checked ~ .navAuto .autoBtn1 {
+    background-color: #354733;
+}
+
+#radio2:checked ~ .navAuto .autoBtn2 {
+    background-color: #354733;
+}
+
+#radio3:checked ~ .navAuto .autoBtn3 {
+    background-color: r#354733;
+}
+
+#radio4:checked ~ .navAuto .autoBtn4 {
+    background-color: #354733;
+}
+
+#radio5:checked ~ .navAuto .autoBtn5 {
+    background-color: #354733;
+}

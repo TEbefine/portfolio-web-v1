@@ -1,5 +1,6 @@
 .secSkill {
     display: flex;
+    width: 181vh;
 }
 
 .imageJm {
@@ -9,6 +10,7 @@
 
 .secIn {
     display: block;
+    width: 100vh;
     margin: 6rem 4.3rem 0 5rem;
 }
 

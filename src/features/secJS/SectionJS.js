@@ -2,15 +2,12 @@ import React from "react";
 import styles from "./SectionJS.module.css";
 import { Link } from "react-router-dom";
 import { script } from "../language/scrip";
+import JamPic from "../changePic/JamPic";
 
 function SectionJS({ language }) {
   return (
     <div className={styles.secSkill}>
-      <img
-        className={styles.imageJm}
-        src="/img/jammming1.png"
-        alt="explant jammming method one"
-      />
+      < JamPic />
       <div className={styles.secIn}>
         <p className={styles.aritce}>
           &nbsp;&nbsp;&nbsp;{script[language].main.section.secFour.secOne}
