@@ -92,7 +92,7 @@
 }
 
 #radio3:checked ~ .navAuto .autoBtn3 {
-    background-color: r#354733;
+    background-color: #354733;
 }
 
 #radio4:checked ~ .navAuto .autoBtn4 {
