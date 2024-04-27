@@ -1,30 +1,30 @@
-.slider {
+.sliderOne {
     overflow: hidden;
     border-radius: 5px;
 }
 
-.slides {
+.slidesOne {
     display: flex;
     width: 300%;
 }
 
-.slides input {
+.slidesOne input {
     display: none;
 }
 
-.slide {
+.slideOne {
     width: 33%;
     transition: 2s;
 }
 
-.navManual {
+.navManualOne {
     position: absolute;
     margin-top: 16.5rem;
     margin-left: 8.5rem;
     display: flex;
 }
 
-.manualBtn {
+.manualBtnOne {
     border: 5px solid #F2F1EB;
     padding: 5px;
     border-radius: 10px;
@@ -32,27 +32,27 @@
     transition: 1s;
 }
 
-.manualBtn:not(:last-child) {
+.manualBtnOne:not(:last-child) {
     margin-right: 18.5px;    
 }
 
-.manualBtn:hover {
+.manualBtnOne:hover {
     background-color: #F2F1EB;    
 }
 
-#radio1:checked ~.first {
+#radio1One:checked ~.firstOne {
     margin-left: 0;
 }
 
-#radio2:checked ~.first {
+#radio2One:checked ~.firstOne {
     margin-left: -33%;
 }
 
-#radio3:checked ~.first {
+#radio3One:checked ~.firstOne {
     margin-left: -66%;
 }
 
-.navAuto {
+.navAutoOne {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -60,26 +60,26 @@
     margin-top: 16.5rem;
 }
 
-.navAuto div{
+.navAutoOne div{
     border: 5px solid #F2F1EB;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
 }
 
-.navAuto div:not(:last-child) {
+.navAutoOne div:not(:last-child) {
     margin-right: 18.5px;
 }
 
-#radio1:checked ~ .navAuto .autoBtn1 {
+#radio1One:checked ~ .navAutoOne .autoBtn1One {
     background-color: #F2F1EB;
 }
 
-#radio2:checked ~ .navAuto .autoBtn2 {
+#radio2One:checked ~ .navAutoOne .autoBtn2One {
     background-color: #F2F1EB;
 }
 
-#radio3:checked ~ .navAuto .autoBtn3 {
+#radio3One:checked ~ .navAutoOne .autoBtn3One {
     background-color: #F2F1EB;
 }
 
