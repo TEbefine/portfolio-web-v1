@@ -39,5 +39,10 @@
 
 .navLink span {
     font-size: 1rem;
+    transition: transform 0.3s ease;
 }
+  
+.navLink:hover span {
+    transform: translateX(2px) translateY(-2px); /* Adjust the translation values as needed */
+  }
 

@@ -7,7 +7,7 @@ import JamPic from "../changePic/JamPic";
 function SectionJS({ language }) {
   return (
     <div className={styles.secSkill}>
-      < JamPic />
+      <JamPic />
       <div className={styles.secIn}>
         <p className={styles.aritce}>
           &nbsp;&nbsp;&nbsp;{script[language].main.section.secFour.secOne}
